@@ -46,13 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack(
         children: [
           const Align(
-            alignment: Alignment(0, -0.9),
+            alignment: Alignment(0, -0.8),
             child: Text("Test your\nreaction speed",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 38,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                  decorationColor: Colors.black),
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white),
             ),
           ),
           Align(
@@ -65,14 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Text(_secondsText,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w600, color: Colors.white),
+                    style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w500, color: Colors.white),
                   ),
                 ),
               ),
             ),
           ),
           Align(
-            alignment: const Alignment(0, 0.9),
+            alignment: const Alignment(0, 0.8),
             child: GestureDetector(
               onTap:() {
                 setState(() {
@@ -99,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Center(
                     child: Text(_getButtonText(),
                       textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 38, fontWeight: FontWeight.w700, color: Colors.white),
+                      style: const TextStyle(fontSize: 38, fontWeight: FontWeight.w900, color: Colors.white),
                     ),
                   ),
                 ),
